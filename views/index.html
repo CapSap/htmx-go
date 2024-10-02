@@ -6,11 +6,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/htmx.org@1.9.9"
+        integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-    Count {{.Count}}
+    <h1>heading</h1>
+    <div>
+        Counter {{.Count}}
+        est
+        test
+        <button hx-post="/count">Count</button>
+    </div>
 </body>
 
 </html>
